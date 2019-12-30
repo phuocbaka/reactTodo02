@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="jp">
+    <head>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+            <script type="text/babel">
+                // const Title = React.createElement ('div',{className:'title'},'Logo');
+                const Title = <div className = 'title'>LOGO</div>
+                
+                const Images = React.createElement ('img', {src :'images/logo.png'});
+                const Imagees = React.createElement ('img', {src :'images/01.jpg'});
+
+                const App = React.createElement ('div', null, Title, Images ,Imagees )
+                const root = document.getElementById('root')
+                ReactDOM.render(App,root);
+            </script>
+    </body>
+</html>
